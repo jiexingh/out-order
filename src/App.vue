@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <van-tabbar route>
+      <van-tabbar-item replace to="/home" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item replace to="/add" icon="plus">添加</van-tabbar-item>
+    </van-tabbar>
   </div>
 </template>
 
 <script>
-import { Button } from "vant";
+import { Button, Tabbar, TabbarItem } from "vant";
 
 export default {
   name: "app",
   components: {
-    [Button.name]:Button
+    [Button.name]: Button,
+    [Tabbar.name]: Tabbar,
+    [TabbarItem.name]: TabbarItem
   }
 };
 </script>

@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import { Button, Tabbar, TabbarItem } from "vant";
+import { Tabbar, TabbarItem, Uploader } from "vant";
 
 export default {
   name: "app",
   components: {
-    [Button.name]: Button,
     [Tabbar.name]: Tabbar,
-    [TabbarItem.name]: TabbarItem
+    [TabbarItem.name]: TabbarItem,
+    [Uploader.name]: Uploader
   }
 };
 </script>

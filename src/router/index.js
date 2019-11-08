@@ -12,6 +12,10 @@ const router = new VueRouter({
         }, {
             path: '/detail',
             component: () => import('../views/detail.vue')
+        },
+        {
+            path: '/add',
+            component: () => import('../views/add.vue')
         }
     ]
 

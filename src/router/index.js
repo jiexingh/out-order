@@ -16,6 +16,10 @@ const router = new VueRouter({
         {
             path: '/add',
             component: () => import('../views/add.vue')
+        },
+        {
+            path: '/my',
+            component: () => ('../views/my/my.vue')
         }
     ]
 
